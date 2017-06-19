@@ -56,15 +56,15 @@ Bar.prototype = {
 		this.x += this.vitx * forceX;
 		this.y += this.vity * forceY;
 
-		if(this.x < this.diam/2){
-			this.x = this.diam/2;
-		} else if(this.x > width-this.diam/2){
-			this.x = width-this.diam/2;
+		if(this.x < this.diam/2+80){
+			this.x = this.diam/2+80;
+		} else if(this.x > width-this.diam/2-80){
+			this.x = width-this.diam/2-80;
 		}
-		if(this.y < this.diam/2){
-			this.y = this.diam/2;
-		} else if(this.y > height-this.diam/2){
-			this.y = height-this.diam/2;
+		if(this.y < this.diam/2+55){
+			this.y = this.diam/2+55;
+		} else if(this.y > height-this.diam/2-55){
+			this.y = height-this.diam/2-55;
 		}
 
 //	rect(this.x, this.y, this.diam * forceX*50, this.diam * forceY*50);		
