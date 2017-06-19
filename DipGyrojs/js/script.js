@@ -28,10 +28,10 @@ function setup(){
 
 
 function draw(){
- background(200);
+ background(50,50,250);
    console.log('draw');
    noStroke();
-   fill(random(255),random(255),random(255));
+   fill(255);
 
    for (var i = 0; i < bars.length; i++) {
 		bars[i].update();
